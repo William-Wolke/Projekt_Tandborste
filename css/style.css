@@ -11,11 +11,19 @@ nav {
 nav > div {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
 
+nav > div > div {
+    display: flex;
+}
+
+#brand-div {
+    width: 50%;
 }
 
 .main-nav {
-    padding: 5em;
+    padding: 2em, 3em;
     background-color: rgb(7, 157, 99);
     display: block;
     transition: transform .2s;
@@ -28,3 +36,4 @@ nav > div {
     font-size: larger;
     background-color: rgb(7, 157, 99);
 }
+
