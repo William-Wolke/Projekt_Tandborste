@@ -1,0 +1,30 @@
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+nav {
+    width: 100vw;
+    background-color: rgb(7, 157, 99);
+}
+
+nav > div {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main-nav {
+    padding: 5em;
+    background-color: rgb(7, 157, 99);
+    display: block;
+    transition: transform .2s;
+    text-align: center;
+    width: 25vw;
+}
+
+.main-nav:hover {
+    transform: scale(1.25);
+    font-size: larger;
+    background-color: rgb(7, 157, 99);
+}
