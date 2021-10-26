@@ -3,27 +3,48 @@
     padding: 0;
     margin: 0;
 }
+
 nav {
     width: 100%;
     background-color: rgb(7, 157, 99);
     height: 10vh;
     display: flex;
-    
 }
+
 footer {
     width: 100%;
     background-color: rgb(7, 157, 99);
-    height: 10vh;
+    height: 20vh;
     display: flex;
-    
     bottom: 0;
+    justify-content: center;
+    
 }
 
+#footer-div {
+    text-align: center;
+    height: 100%;
+    width: 85%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-div > a {
+    text-align: center;
+}
 main {
-    height: 80vh;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: rgb(157, 220, 236);
+    /*background-image: url();*/
+}
+
+#logo-container, #navs-container >a {
+    color: white;
 }
 
 #nav-logo{
@@ -37,18 +58,17 @@ main {
     width: 40%;
     align-items: center;
     display: flex;
-    background-color: blue;
-    font-size: 5vh;
+    font-size: 6vh;
+    font-weight: bold; 
+    
 }
 
 #navs-container{
     width: 60%;
-    padding-right: 3%;
+    
     height: 100%;
     display: flex;
     justify-content: space-between;
-    
-
 }
 
 .navs {
@@ -56,31 +76,78 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(7, 157, 99);
+    /*background-color: rgb(7, 157, 99);*/
     height:100%;
     /*transition: transform .2s;*/
     text-align: center;
-    
     width: 33.33333%;
     font-size: 5vh;
 }
 
-
-
 .navs:hover {
     /*transform: scale(1.20);*/
     font-size: 8vh;
-    background-color: rgb(7, 157, 99);
-
-    
+    background-color: rgb(42, 185, 130);
 }
 
 .main-img {
-    background-color: tomato;
-    width: 30%;
     
+    width: 30%;
 }
 
 #content{
-    background-color: yellow;
+    background-color: rgb(64, 65, 67);
+    width: 65%;
+    opacity: 90%;
+    color: white;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+@media only screen and (max-width: 1920px){
+
+}
+/*tablet*/
+@media only screen and (max-width: 1400px){
+
+}
+/*Telefon*/
+@media only screen and (max-width: 700px) {
+    nav {
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+    nav > div > p{
+        visibility: hidden;
+    }
+
+    .navs {
+        font-size: 2.6vh;
+        width: 33%;
+    }
+
+    #nav-logo {
+        margin: 0;
+    }
+
+    #logo-container {
+        width: 25%;
+        
+    }
+    #navs-container{
+        
+        width: 75%;
+    }
+
+    #content{
+        width: 100%;
+    }
+
+    footer {
+        bottom: auto;
+        margin-bottom: 10vh;
+    }
+    
 }
