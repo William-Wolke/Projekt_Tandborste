@@ -109,7 +109,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(243, 243, 243);
     /*background-image: url();*/
     margin: 0;
     padding: 0;
@@ -125,12 +125,15 @@ main {
     padding-bottom: 20vh;
     padding-top: 10vh;
     color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 #slideshow{
     display: flex;
     align-items: center;
     height: 50vh;
+    width: 100%;
 }
 
 .slideshowFigure{
@@ -181,17 +184,44 @@ main {
 }
 
 .space-between {
-    width: 90%;
+    width: 100%;
     height: 0.3em;   
     background: linear-gradient(90deg, rgba(7,157,99,1) 0%, rgba(39,187,93,1) 60%, rgba(151,223,77,1) 100%);
     border-radius: 50%;
-    margin: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .content {
     display: flex;
-    flex-direction: row;
-    margin: 5%;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+}
+
+#buy-div{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#buy-img{
+    height: 100%;
+    width: 40%;
+}
+
+#buy-img > img{
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+}
+
+#buy-text{
+    height: 100%;
+    width: 50%;
+    background-color: red;
 }
 
 #read-about{
@@ -199,15 +229,12 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: space-between;
-    gap: 5vh;
-    width: 90%;
+    width: 100%;
     max-width: 100%;
 }
 
 .content-figures {
     width: 45%;
-    background: rgb(7,157,99);
-    background: linear-gradient(90deg, rgba(7,157,99,1) 0%, rgba(39,187,93,1) 60%, rgba(151,223,77,1) 100%);
     color: white;
 }
 
